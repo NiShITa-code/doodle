@@ -1,0 +1,12 @@
+Error: Tailwind CSS has not been configured with the NativeWind preset
+    at tailwindConfigV3 (C:\Users\parth\Desktop\doodle\node_modules\nativewind\dist\metro\tailwind\v3\index.js:77:15)
+    at tailwindConfig (C:\Users\parth\Desktop\doodle\node_modules\nativewind\dist\metro\tailwind\index.js:19:42)
+    at withNativeWind (C:\Users\parth\Desktop\doodle\node_modules\nativewind\dist\metro\index.js:18:57)
+    at Object.<anonymous> (C:\Users\parth\Desktop\doodle\test.js:5:3)
+    at Module._compile (node:internal/modules/cjs/loader:1804:14)
+    at Object..js (node:internal/modules/cjs/loader:1936:10)
+    at Module.load (node:internal/modules/cjs/loader:1525:32)
+    at Module._load (node:internal/modules/cjs/loader:1327:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+Success

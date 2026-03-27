@@ -1,29 +1,44 @@
 {
   "expo": {
-    "name": "empty-rocket",
-    "slug": "empty-rocket",
+    "name": "Doodle Bound",
+    "slug": "doodle-bound",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.doodlebound.app"
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      "package": "com.doodlebound.app"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      [
+        "react-native-widget-extension",
+        {
+          "name": "DoodleBoundWidget",
+          "bundleIdentifier": "com.doodlebound.widget",
+          "development": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "DoodleBoundWidgets",
+                  "bundleIdentifier": "com.doodlebound.app.DoodleBoundWidgets",
+                  "entitlements": {}
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "27ebead7-d11d-4a84-9b6e-f6ba85f5164a"
+      }
     }
   }
 }
